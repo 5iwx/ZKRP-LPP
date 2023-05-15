@@ -1,0 +1,36 @@
+<map longitude="{{longitude}}" enable-3D="true" enable-building="true" latitude="{{latitude}}" 
+  bindregionchange="changeMap" bindtap="clickMap" show-location="true" markers="{{[marker]}}" circles="{{[SecretCircle,PublicCircle]}}"> </map>
+<!-- <view class="change_model" bindtap="changemodel">
+	<image src="../../asset/change.svg"></image>
+	<view>{{model==0?'转经纬度':'转地址'}}</view>
+</view> -->
+<view class="commit_model" bindtap="Commit">
+	<!-- <image src="../../asset/change.svg"></image> -->
+	<view>提 交</view>
+</view>
+<view class="fixed_model">
+	<!-- <view class="title">服务范围{{model==0?'地址':'经纬度'}}</view> -->
+	<input class="in" bindinput="oninput" value="{{range}}" data-key="{{'range'}}"
+      placeholder="输入一个数字如2000，表示您接受2公里内的服务。" cursor-spacing="20"/>
+      <!-- "{{model==0?address:location}}"  "{{model==0?'address':'location'}}" "{{model==0?'拖动地图定位位置或输入地址':'如：22.5401,113.9345'}}"-->
+	<view class="btn" bindtap="setRange">
+		<!-- <image src="../../asset/local.svg"></image> -->确认</view>
+</view>
+<view class="info_model">
+	<view class="info_item">
+		<view>经纬度</view>
+		<view>{{info.location}}</view>
+	</view>
+	<!-- <view class="info_item">
+		<view>推荐地址</view>
+		<view>{{info.formatted}}</view>
+	</view> -->
+	<!-- <view class="info_item">
+		<view>常规地址</view>
+		<view>{{info.address}}</view>
+	</view>
+	<view class="info_item">
+		<view>行政区</view>
+		<view>{{info.adinfo}}</view>
+	</view> -->
+</view>

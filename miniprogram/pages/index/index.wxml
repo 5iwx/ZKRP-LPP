@@ -1,0 +1,4 @@
+<image class="topimg" src="../../asset/top.svg"></image>
+<view class="title">定位服务</view>
+<view class="tips">本程序将获取您的定位，提供安全的隐私保护服务</view>
+<button class="mainbtn" bindtap="tomap">获取定位</button>
