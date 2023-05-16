@@ -14,29 +14,32 @@
         </radio-group>
       </view> -->
 
-      <view class="page-section page-section-gap">
+      <block>
         <view class="page-section-title">您想要查找的服务是</view>
-        <checkbox-group name="checkbox">
-          <view>
+        <checkbox-group name="checkbox" class="checkset">
+          <view class="viewset">
             <label><checkbox value="checkbox1"/>美食餐饮</label>
             <label><checkbox value="checkbox2"/>酒店住宿</label>
             <label><checkbox value="checkbox3"/>休闲玩乐</label>
-            <label><checkbox value="checkbox4"/>电影展出</label>
           </view>
-          <view>
+          <view class="viewset">
+            <label><checkbox value="checkbox4"/>电影展出</label>
             <label><checkbox value="checkbox5"/>旅游景点</label>
             <label><checkbox value="checkbox6"/>男士理发</label>
+          </view>
+          <view class="viewset">
             <label><checkbox value="checkbox7"/>美容美甲</label>
             <label><checkbox value="checkbox8"/>医疗牙科</label>
-          </view>
-          <view>
             <label><checkbox value="checkbox9"/>运动健身</label>
+            
+          </view>
+          <view class="viewset">
             <label><checkbox value="checkbox10"/>按摩足疗</label>
             <label><checkbox value="checkbox11"/>洗浴汗蒸</label>
             <label><checkbox value="checkbox12"/>亲子游乐</label>
           </view>
         </checkbox-group>
-      </view>
+      </block>
 
       <view class="page-section page-section-gap">
         <view class="page-section-title">您接受的价位是</view>
@@ -54,9 +57,11 @@
         </view>
       </view> -->
       
-      <view class="btn-area">
-        <button style="margin: 800rpx 210rpx" type="primary" formType="submit">生成证明</button>
-        <button style="margin: -750rpx 210rpx" formType="reset">重新选择</button>
+      <view class="btn1">
+        <button bindtap="tcpconnect">连接服务器</button>
+        <button bindtap="tcpclose">断开连接</button>
+        <button>重新选择</button>
+        <button type="primary" bindtap="zkrp_submit">生成证明</button>
       </view>
     </form>
   </view>

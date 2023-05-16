@@ -1,1 +1,37 @@
 /* pages/commit.wxss */
+.btn1{
+  position: absolute;
+  top: 875rpx;
+  left: 210rpx;
+  height: 150rpx;
+  width: 100rpx;
+  align-items: center;
+  flex-direction: row;
+}
+
+.viewset{
+  display: flex;
+  align-items: center;
+  width: 675rpx;
+  display: flex;
+  justify-content: space-between;
+}
+/*
+.btn2 button{
+  position: absolute;
+  top: 1025rpx;
+  left: 210rpx;
+  height: 75rpx;
+  width: 100rpx;
+  align-items: center;
+  flex-direction: row;
+}
+.btn3 button{
+  position: absolute;
+  top: 1100rpx;
+  left: 210rpx;
+  height: 75rpx;
+  width: 100rpx;
+  align-items: center;
+  flex-direction: row;
+}*/
